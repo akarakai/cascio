@@ -1,11 +1,13 @@
 import styles from "./Healthbar.module.css";
-
-const Healthbar = () => {
+type HealthbarProps = {
+  dmg: number;
+}
+const Healthbar = ({ dmg }: { dmg: number }) => {
   return (
-    <div>
-
+    <div className={styles.container}>
+      <div className={styles.innerBar} style={{ width: `${dmg}%` }}></div>
     </div>
   );
-}
+};
 
 export default Healthbar;

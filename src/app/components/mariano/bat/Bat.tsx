@@ -3,12 +3,14 @@ import styles from "./bat.module.css";
 
 type BatProps = {
   className?: string;
+  isHitting: boolean;
 }
 
-const Bat = ({ className }: BatProps) => {
+const Bat = ({ className, isHitting }: BatProps) => {
   return (
     <div  className={styles.bat} >
-     <Image src="/bat.png" alt='mazza' width="271" height="271"/>
+     <Image src="/bat.png" alt='mazza' width="271" height="271" className={`${isHitting ? styles.hittingImg : ''}`}
+     />
     </div>
   );
 }

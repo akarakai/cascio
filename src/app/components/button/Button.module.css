@@ -2,39 +2,25 @@
   background-color: goldenrod;
   border: 1px black solid;
   border-radius: 20px;
-  padding: 20px 40px;
-  font-size: 2.2rem;
+  padding: 20px 20px;
+  font-size: 2rem;
   transition-duration: 0.3s;
   animation-name: wiggle;
   animation-delay: 1s;
   animation-duration: 0.5s;
 }
 
-.btn:hover {
+.btn:hover:not(:disabled) {
   background-color: rgb(219, 186, 101);
   transform: scale(1.05);
   transition-duration: 0.3s;
 }
 
-.btn:active {
-  background-color: rgb(142, 110, 29);
+.btn:active:not(:disabled) {
   transform: scale(0.95);
 }
 
-@keyframes wiggle {
-  20% {
-    transform: rotate(10deg);
-  }
-  40% {
-    transform: rotate(-10deg);
-  }
-  60% {
-    transform: rotate(10deg);
-  }
-  80% {
-    transform: rotate(-10deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

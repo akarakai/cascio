@@ -11,3 +11,9 @@
   text-align: center;
   margin: 20px 0;
 }
+
+
+.main {
+  max-width: 800px;
+  margin: auto;
+}
