@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  margin-left: 20px;
+}
+
+.imgContainer {
+  position: relative;
+  background-color: rebeccapurple;
+}
