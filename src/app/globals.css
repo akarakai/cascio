@@ -2,3 +2,6 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(43, 43, 43);
+}
