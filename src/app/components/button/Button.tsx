@@ -10,7 +10,7 @@ type ButtonProps = {
   children: ReactNode
 }
 
-const Button = ({ className, disabled, onClick, children }: ButtonProps) => {
+const Button = ({ disabled, onClick, children }: ButtonProps) => {
   return (
     <button className={styles.btn} onClick={onClick} disabled={disabled}>
      {children}

@@ -1,7 +1,5 @@
 import styles from "./Healthbar.module.css";
-type HealthbarProps = {
-  dmg: number;
-}
+
 const Healthbar = ({ dmg }: { dmg: number }) => {
   return (
     <div className={styles.container}>

@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../button/Button";
 import Healthbar from "../healthbar/Healthbar";
 import Bat from "../mariano/bat/Bat";

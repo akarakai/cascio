@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Button from "./components/button/Button";
-import Mariano from "./components/mariano/Mariano";
 import Minigame from "./components/minigame/Minigame";
 import styles from "./page.module.css";
 
