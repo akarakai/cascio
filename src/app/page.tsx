@@ -20,9 +20,6 @@ export default function Home() {
         <section>
           <h1 className={styles.header}>Ottieni il mio Link di Affiliazione Amazon</h1>
           <h2 className={styles.miniheader}>Prima che Mariano distrugga il bottone...</h2>
-          <p className={styles.description}>
-            Gioca ora e scopri offerte esclusive con il mio link di affiliazione Amazon! 🛒⚡
-          </p>
         </section>
 
         <section aria-label="Minigioco per ottenere il link di affiliazione">
