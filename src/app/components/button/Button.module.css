@@ -8,6 +8,7 @@
   animation-name: wiggle;
   animation-delay: 1s;
   animation-duration: 0.5s;
+ 
 }
 
 .btn:hover:not(:disabled) {
@@ -22,5 +23,11 @@
 
 .btn:disabled {
   opacity: 0.6;
+  background-color: rgb(255, 225, 151);
   cursor: not-allowed;
+  background-image: url("/cracked.png");
+  background-size: cover; 
+
+
+
 }

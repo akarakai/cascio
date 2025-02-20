@@ -12,29 +12,26 @@ import Fail from "../fail/Fail";
 const Minigame = () => {
   const [totDmg, setTotDmg] = useState(0);
   const [isHitting, setIsHitting] = useState(false);
-  const [isBtnClicked, setBtnClicked] = useState(false);
+  const [isBtnClicked, setIsBtnClicked] = useState(false);
 
   useEffect(() => {
     if (totDmg >= 100 || isBtnClicked) return;
-    const damageInterval = setInterval(() => {
-      setTotDmg(prev => Math.min(prev + 10, 100));
-      
+
+    const timer = setTimeout(() => {
       setIsHitting(true);
-      
+
+      setTotDmg(prev => Math.min(prev + 10, 100));
+
       setTimeout(() => {
         setIsHitting(false);
       }, 300);
-      
-    }, 1000); 
-    
-    return () => {
-      clearInterval(damageInterval);
-      setIsHitting(false); // Ensure animation stops
-    };
-  }, [isBtnClicked]); // Only re-run when button is clicked
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [totDmg, isBtnClicked]);
 
   const handleButtonClick = () => {
-    setBtnClicked(true);
+    setIsBtnClicked(true);
   };
 
   return (
@@ -49,6 +46,7 @@ const Minigame = () => {
           <Bat isHitting={isHitting} />
         </div>
       </article>
+
       <Healthbar dmg={totDmg} />
 
       {(totDmg < 100 && isBtnClicked) && <Success />}

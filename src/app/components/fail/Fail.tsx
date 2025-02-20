@@ -1,8 +1,8 @@
 const Fail = () => {
   return (
-    <>
-    
-    </>
+    <div>
+      <p> </p>
+    </div>
   );
 }
 
