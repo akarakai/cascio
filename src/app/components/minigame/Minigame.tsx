@@ -40,7 +40,11 @@ const Minigame = () => {
         <Button 
           disabled={totDmg >= 100} 
           onClick={handleButtonClick}
-        />
+        >
+          Clicca Qui
+        </Button>
+
+
         <div className={styles.imgContainer}>
           <Mariano />
           <Bat isHitting={isHitting} />

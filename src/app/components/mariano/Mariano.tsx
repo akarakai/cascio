@@ -8,9 +8,7 @@ type MarianoProps = {
 
 const Mariano = ({ className }: MarianoProps) => {
   return (
-    <div className={styles.imgContainer}>
       <Image className={styles.img} src="/mariano.png" alt="mariano" width="370" height="370"/>
-    </div>
   )
 }
 

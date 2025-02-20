@@ -1,7 +1,10 @@
 .img {
   transform: scale(0.6);
   position: absolute;
-  right: -130px;
+  right: -100px;
   top: -50px;
 }
 
+.imgContainer {
+  background-color: rebeccapurple;
+}
