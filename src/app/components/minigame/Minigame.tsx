@@ -46,8 +46,9 @@ const Minigame = () => {
 
 
         <div className={styles.imgContainer}>
+          
           <Mariano />
-          <Bat isHitting={isHitting} />
+          <Bat isHitting={isHitting}/>
         </div>
       </article>
 
