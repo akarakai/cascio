@@ -9,7 +9,7 @@ type BatProps = {
 const Bat = ({ isHitting }: BatProps) => {
   return (
     <div  className={styles.bat} >
-     <Image src="/bat.png" alt='mazza' width="271" height="271" className={`${isHitting ? styles.hittingImg : ''}`}
+     <Image priority src="/bat.png" alt='mazza' width="271" height="271" className={`${isHitting ? styles.hittingImg : ''}`}
      />
     </div>
   );
