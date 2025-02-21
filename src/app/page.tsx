@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Minigame from "./components/minigame/Minigame";
 import styles from "./page.module.css";
 
